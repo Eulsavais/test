@@ -10,324 +10,394 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster+Two&family=Open+Sans:wght@300&family=Playfair+Display:wght@600;900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="popup.css">
 
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 
 	<script src="libs/jQuery.js" defer></script>
-	<script src="js/script.js" defer></script>
+	<script src="js/toggle.js" defer></script>
+	<script src="js/popup.js" defer></script>
+	<script src="js/forms.js" defer></script>
 
 	<title>Beats</title>
 </head>
 <body>
 
-	<header class="header">
-		<div class="container">
-			<div class="top_bar">
-				<div class="logo">
-					<img src="images/logo.png" alt="logo">
-					<span>eatStars</span>
-				</div>
-				<div class="main_bar">
-					<nav>
-						<a href="#">Feed</a>
-						<a href="#">Tracks</a>
-						<a href="#">Distribution</a>
-						<a href="#">Publishing</a>
-						<a href="#">Beat ID</a>
-					</nav>
-				</div>
-				<div class="mobile_bar">
-					<div class="toggle_menu">
-						<div></div>
-						<div></div>
-						<div></div>
+	<div class="wrapper">
+		<header class="header lock-padding" id="header">
+			<div class="container">
+				<div class="top_bar">
+					<div class="logo">
+						<img src="images/logo.png" alt="logo">
+						<span>eatStars</span>
+					</div>
+					<div class="main_bar">
+						<nav>
+							<a href="#">Feed</a>
+							<a href="#">Tracks</a>
+							<a href="#">Distribution</a>
+							<a href="#">Publishing</a>
+							<a href="#">Beat ID</a>
+						</nav>
+					</div>
+					<div class="mobile_bar">
+						<div class="toggle_menu">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-
-	<main class="main">
-		<section class="main_section">
-			<div class="container">
-				<div class="main-section_title">
-					
-					<h1>The World's #1 Marketplace to buy & sell beats</h1>
-				</div>
-				
-				<form action="sumbit" class="main-section_search">
-					<div class="search-icon"><ion-icon name="search-outline"></ion-icon></div>
-					<input type="text" placeholder="Try to search smth">
-				</form>
+		</header>
 	
-				<div class="main-btn">
-					<a href="#">Learn more</a>
-				</div>
-			</div>
-		</section>
-
-		<section class="statistics">
-			<div class="container">
-				<div class="stat">
-					<div class="stat_item">
-						<div class="stat-count">55</div>
-						<div class="stat-text">Stat text</div>
+		<main class="main">
+			<section class="main_section">
+				<div class="container">
+					<div class="main-section_title">
+						
+						<h1>The World's #1 Marketplace to buy & sell beats</h1>
 					</div>
-					<div class="stat_item">
-						<div class="stat-count">12</div>
-						<div class="stat-text">Stat text</div>
-					</div>
-					<div class="stat_item">
-						<div class="stat-count">44</div>
-						<div class="stat-text">Stat text</div>
-					</div>
-					<div class="stat_item">
-						<div class="stat-count">99</div>
-						<div class="stat-text">Stat text</div>
-					</div>
-					<div class="stat_item">
-						<div class="stat-count">23</div>
-						<div class="stat-text">Stat text</div>
-					</div>
-				</div>
-			</div>
-		</section>
+					
+					<form action="sumbit" class="main-section_search">
+						<div class="search-icon"><ion-icon name="search-outline"></ion-icon></div>
+						<input type="text" placeholder="Try to search smth">
+					</form>
 		
-		<section class="artists">
-			<div class="gallery_title">
-				<h2>Listen to top artists!</h2>
-			</div>
-				<div class="gallery">
-						
-						<div class="gal-item">
-							<img src="images/3.jpg" class="gal-img"> 
-							<div class="gal-info">Ice Cube</div>
-						
-						
-					</div>
-					<div class="gal-column">
-						<div class="gal-item">
-							<img src="images/5.jpg" class="gal-img">
-							<div class="gal-info">Scriptonite</div>
-						</div>
-						<div class="gal-item">
-							<img src="images/1.jpg" class="gal-img">
-							<div class="gal-info">Yanix</div>
-						</div>
-					</div>
-					
-						<div class="gal-item">
-							<img src="images/4.jpg" class="gal-img">
-							<div class="gal-info">Eminem</div>
-						
-						
-					</div>
-					
-						<div class="gal-item">
-							<img src="images/2.jpg" class="gal-img">
-							<div class="gal-info">Drake</div>
-					
-						
-					</div>
-				</div>
-			
-		</section>
-
-		<section class="genres">
-
-			<div class="container">
-				<div class="gallery_title">
-					<h2>Listen to the latest genres!</h2>
-				</div>
-				<div class="gallery_gen">
-					<div class="gen_item">
-						<div class="gen_header">
-							<a href="#">
-								<img src="images/jaz.jpg" alt="" class="gen_img">
-							</a>
-							<div class="genre_name">Jazz</div>
-						</div>
-						<div class="gen_content">
-							<div class="gen_title">Lorem, ipsum dolor.</div>
-							<div class="gen_text">Lorem ipsum dolor sit amet consectetur 
-								adipisicing elit. Obcaecati, repudiandae.</div>
-						</div>
-						<div class="gen_footer">
-							<ion-icon name="musical-notes-outline" class="gen-icon"></ion-icon>
-							2221
-							<ion-icon name="play-circle-outline" class="gen-icon"></ion-icon>
-							551
-						</div>
-
-					</div>
-					<div class="gen_item">
-						<div class="gen_header">
-							<a href="#">
-								<img src="images/rock.png" alt="" class="gen_img">
-							</a>
-							<div class="genre_name">Rock</div>
-						</div>
-						<div class="gen_content">
-							<div class="gen_title">Lorem, ipsum dolor.</div>
-							<div class="gen_text">Lorem ipsum dolor sit amet consectetur 
-								adipisicing elit. Obcaecati, repudiandae.</div>
-						</div>
-						<div class="gen_footer">
-							<ion-icon name="musical-notes-outline" class="gen-icon"></ion-icon>
-							1203
-							<ion-icon name="play-circle-outline" class="gen-icon"></ion-icon>
-							322
-						</div>
-
-					</div>
-					<div class="gen_item">
-						<div class="gen_header">
-							<a href="#">
-								<img src="images/hip.jpg" alt="" class="gen_img">
-							</a>
-							<div class="genre_name">Hip-Hop</div>
-						</div>
-						<div class="gen_content">
-							<div class="gen_title">Lorem, ipsum dolor.</div>
-							<div class="gen_text">Lorem ipsum dolor sit amet consectetur 
-								adipisicing elit. Obcaecati, repudiandae.</div>
-						</div>
-						<div class="gen_footer">
-							<ion-icon name="musical-notes-outline" class="gen-icon"></ion-icon>
-							1231
-							<ion-icon name="play-circle-outline" class="gen-icon"></ion-icon>
-							444
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="join">
-			<div class="container">
-				<div class="joiner">
-					<div class="title">
-						OVER 2 MILLION CREATORS <br>
-						 READY TO WORK WITH YOU!
-					</div>
 					<div class="main-btn">
-						<a href="#">
-							Start selling
-						</a>
+						<a href="#">Learn more</a>
 					</div>
 				</div>
-			</div>
-		</section>
-
-	</main>
-
-	<footer class="footer">
-		<div class="container">
+			</section>
+	
+			<section class="statistics">
+				<div class="container">
+					<div class="stat">
+						<div class="stat_item">
+							<div class="stat-count">55</div>
+							<div class="stat-text">Stat text</div>
+						</div>
+						<div class="stat_item">
+							<div class="stat-count">12</div>
+							<div class="stat-text">Stat text</div>
+						</div>
+						<div class="stat_item">
+							<div class="stat-count">44</div>
+							<div class="stat-text">Stat text</div>
+						</div>
+						<div class="stat_item">
+							<div class="stat-count">99</div>
+							<div class="stat-text">Stat text</div>
+						</div>
+						<div class="stat_item">
+							<div class="stat-count">23</div>
+							<div class="stat-text">Stat text</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			
-			<div class="top-footer">
-				<div class="title-footer">
-					Send me personalized tips for shopping and selling on BeatStars.
+			<section class="artists">
+				<div class="gallery_title">
+					<h2>Listen to top artists!</h2>
 				</div>
-				<form action="sumbit" class="email-search">
-
-					<div class="email-icon">
-						<ion-icon name="mail-open-outline"></ion-icon>
+					<div class="gallery">
+							
+							<div class="gal-item">
+								<img src="images/3.jpg" class="gal-img"> 
+								<div class="gal-info">Ice Cube</div>
+							
+							
+						</div>
+						<div class="gal-column">
+							<div class="gal-item">
+								<img src="images/5.jpg" class="gal-img">
+								<div class="gal-info">Scriptonite</div>
+							</div>
+							<div class="gal-item">
+								<img src="images/1.jpg" class="gal-img">
+								<div class="gal-info">Yanix</div>
+							</div>
+						</div>
+						
+							<div class="gal-item">
+								<img src="images/4.jpg" class="gal-img">
+								<div class="gal-info">Eminem</div>
+							
+							
+						</div>
+						
+							<div class="gal-item">
+								<img src="images/2.jpg" class="gal-img">
+								<div class="gal-info">Drake</div>
+						
+							
+						</div>
 					</div>
-
-					<input type="email" placeholder="Enter your e-mail">
-
-					<div class="subscribe-btn">
-						<a href="#">Subscribe</a>
+				
+			</section>
+	
+			<section class="genres">
+	
+				<div class="container">
+					<div class="gallery_title">
+						<h2>Listen to the latest genres!</h2>
 					</div>
-
-				</form>
+					<div class="gallery_gen">
+						<div class="gen_item">
+							<div class="gen_header">
+								<a href="#">
+									<img src="images/jaz.jpg" alt="" class="gen_img">
+								</a>
+								<div class="genre_name">Jazz</div>
+							</div>
+							<div class="gen_content">
+								<div class="gen_title">Lorem, ipsum dolor.</div>
+								<div class="gen_text">Lorem ipsum dolor sit amet consectetur 
+									adipisicing elit. Obcaecati, repudiandae.</div>
+							</div>
+							<div class="gen_footer">
+								<ion-icon name="musical-notes-outline" class="gen-icon"></ion-icon>
+								2221
+								<ion-icon name="play-circle-outline" class="gen-icon"></ion-icon>
+								551
+							</div>
+	
+						</div>
+						<div class="gen_item">
+							<div class="gen_header">
+								<a href="#">
+									<img src="images/rock.png" alt="" class="gen_img">
+								</a>
+								<div class="genre_name">Rock</div>
+							</div>
+							<div class="gen_content">
+								<div class="gen_title">Lorem, ipsum dolor.</div>
+								<div class="gen_text">Lorem ipsum dolor sit amet consectetur 
+									adipisicing elit. Obcaecati, repudiandae.</div>
+							</div>
+							<div class="gen_footer">
+								<ion-icon name="musical-notes-outline" class="gen-icon"></ion-icon>
+								1203
+								<ion-icon name="play-circle-outline" class="gen-icon"></ion-icon>
+								322
+							</div>
+	
+						</div>
+						<div class="gen_item">
+							<div class="gen_header">
+								<a href="#">
+									<img src="images/hip.jpg" alt="" class="gen_img">
+								</a>
+								<div class="genre_name">Hip-Hop</div>
+							</div>
+							<div class="gen_content">
+								<div class="gen_title">Lorem, ipsum dolor.</div>
+								<div class="gen_text">Lorem ipsum dolor sit amet consectetur 
+									adipisicing elit. Obcaecati, repudiandae.</div>
+							</div>
+							<div class="gen_footer">
+								<ion-icon name="musical-notes-outline" class="gen-icon"></ion-icon>
+								1231
+								<ion-icon name="play-circle-outline" class="gen-icon"></ion-icon>
+								444
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+	
+			<section class="join">
+				<div class="container">
+					<div class="joiner">
+						<div class="title">
+							OVER 2 MILLION CREATORS <br>
+							 READY TO WORK WITH YOU!
+						</div>
+						<div class="main-btn ">
+							<a href="#popup" class="popup-link">
+								Start selling
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+	
+		</main>
+	
+		<footer class="footer">
+			<div class="container">
+				
+				<div class="top-footer">
+					<div class="title-footer">
+						Send me personalized tips for shopping and selling on BeatStars.
+					</div>
+					<form action="sumbit" class="email-search">
+	
+						<div class="email-icon">
+							<ion-icon name="mail-open-outline"></ion-icon>
+						</div>
+	
+						<input type="email" placeholder="Enter your e-mail">
+	
+						<div class="subscribe-btn">
+							<a href="#">Subscribe</a>
+						</div>
+	
+					</form>
+				</div>
+	
+				<div class="middle-footer">
+					<div class="column">
+						<div class="column-header">
+							BeatStars
+						</div>
+						<div class="links">
+							<a href="#">About Us</a>
+							<a href="#">Jobs</a>
+							<a href="#">Merch</a>
+							<a href="#">Blog</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="column-header">
+							Support
+						</div>
+						<div class="links">
+							<a href="#">About</a>
+							<a href="#">About</a>
+							<a href="#">About</a>
+							<a href="#">About</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="column-header">
+							Press
+						</div>
+						<div class="links">
+							<a href="#">About</a>
+							<a href="#">About</a>
+							<a href="#">About</a>
+							<a href="#">About</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="column-header">
+							Take Beats
+						</div>
+						<div class="links">
+							<a href="#">About</a>
+							<a href="#">About</a>
+							<a href="#">About</a>
+							<a href="#">About</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="column-header">
+							Social Media
+						</div>
+						<div class="links">
+							<div class="social-media">
+								<ion-icon name="logo-youtube"></ion-icon>
+								<a href="#">&nbsp;&nbsp;YouTube</a>
+							</div>
+							<div class="social-media">
+								<ion-icon name="logo-twitter"></ion-icon>
+								<a href="#">&nbsp;&nbsp;Twitter</a>
+							</div>
+							<div class="social-media">
+								<ion-icon name="logo-instagram"></ion-icon>
+								<a href="#">&nbsp;&nbsp;Instagram</a>
+							</div>
+							<div class="social-media">
+								<ion-icon name="logo-vk"></ion-icon>
+								<a href="#">&nbsp;&nbsp;VK</a>
+							</div>
+							<div class="social-media">
+								<ion-icon name="logo-soundcloud"></ion-icon>
+								<a href="#">&nbsp;&nbsp;SounCloud</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<div class="copy">
+						© 2022 BeatStarts
+					</div>
+					<div class="privacy">
+						<a href="#">Conditions</a>
+						<a href="#">Cookie</a>
+						<a href="#">Privacy</a>
+						<a href="#">Copyright</a>
+					</div>
 			</div>
-
-			<div class="middle-footer">
-				<div class="column">
-					<div class="column-header">
-						BeatStars
-					</div>
-					<div class="links">
-						<a href="#">About Us</a>
-						<a href="#">Jobs</a>
-						<a href="#">Merch</a>
-						<a href="#">Blog</a>
-					</div>
-				</div>
-				<div class="column">
-					<div class="column-header">
-						Support
-					</div>
-					<div class="links">
-						<a href="#">About</a>
-						<a href="#">About</a>
-						<a href="#">About</a>
-						<a href="#">About</a>
-					</div>
-				</div>
-				<div class="column">
-					<div class="column-header">
-						Press
-					</div>
-					<div class="links">
-						<a href="#">About</a>
-						<a href="#">About</a>
-						<a href="#">About</a>
-						<a href="#">About</a>
-					</div>
-				</div>
-				<div class="column">
-					<div class="column-header">
-						Take Beats
-					</div>
-					<div class="links">
-						<a href="#">About</a>
-						<a href="#">About</a>
-						<a href="#">About</a>
-						<a href="#">About</a>
-					</div>
-				</div>
-				<div class="column">
-					<div class="column-header">
-						Social Media
-					</div>
-					<div class="links">
-						<div class="social-media">
-							<ion-icon name="logo-youtube"></ion-icon>
-							<a href="#">&nbsp;&nbsp;YouTube</a>
-						</div>
-						<div class="social-media">
-							<ion-icon name="logo-twitter"></ion-icon>
-							<a href="#">&nbsp;&nbsp;Twitter</a>
-						</div>
-						<div class="social-media">
-							<ion-icon name="logo-instagram"></ion-icon>
-							<a href="#">&nbsp;&nbsp;Instagram</a>
-						</div>
-						<div class="social-media">
-							<ion-icon name="logo-vk"></ion-icon>
-							<a href="#">&nbsp;&nbsp;VK</a>
-						</div>
-						<div class="social-media">
-							<ion-icon name="logo-soundcloud"></ion-icon>
-							<a href="#">&nbsp;&nbsp;SounCloud</a>
-						</div>
+		</footer>
+	
+		<div id="popup" class="popup">
+			<div class="popup_body">
+				<div class="popup_content">
+					<a href="#header" class="popup_close close-popup">
+						<ion-icon name="close-circle-outline" ></ion-icon>
+					</a>
+					<div class="form">
+						<form action="#" id="form" class="form_body">
+							<h1 class="form_title">Отправка данных на почту</h1>
+							<div class="form_item">
+								<label for="formName" class="form_label">Имя*:</label>
+								<input type="text" id="formName" name="name" class="form_input _req">
+							</div>
+							<div class="form_item">
+								<label for="formEmail" class="form_label">Email*:</label>
+								<input type="email" id="formEmail" name="email" class="form_input _req _email">
+							</div>
+							<div class="form_item">
+								<div class="form_label">Выберите пол:</div>
+									<div class="options">
+										<div class="options_item">
+											<input id="formSexM" type="radio" value="man" name="sex" checked class="options_input">
+											<label for="formSexM" class="options_label" >Мужской</label>					
+										</div>
+										<div class="options_item">
+											<input id="formSexW" type="radio" value="women" name="sex" class="options_input">
+											<label for="formSexW" class="options_label" >Женский</label>
+										</div>	
+									</div>		
+								</div>
+							<div class="form_item">
+								<label for="formDescription" class="form_label">Описание:</label>
+								<textarea name="description" id="formDescription" class="form_input"></textarea>
+							</div>
+							<div class="form_item">
+								<div class="form_label">Категория:</div>
+								<select name="age" class="select">
+									<option value="exclusive" selected>exclusive</option>
+									<option value="royalty">royalty</option>
+									<option value="free">free</option>
+								</select>
+							</div>
+							<div class="form_item">
+								<div class="form_label">Прикрепить аудио</div>
+								<div class="file">
+									<div class="file_item">
+										<input type="file" accept=".mp3, .wav" name="audio" class="file_input" id="formAudio">
+										<button class="file_button">Выбрать</button>
+									</div>
+									<div id="formPreview" class="file_preview"></div>
+								</div>
+							</div>
+							<div class="form_item">
+								<div class="checkbox">
+									<input id="formAgreement" type="checkbox" name="agreement" class="checkbox_input _req">
+									<label for="formAgreement" class="checkbox_label"><span>Я согласен на обработку своих персональных данных и принимаю <a href="#">условия</a> </span> </label>
+								</div>
+							</div>
+							<button type="submit" class="form_button">Отправить</button>
+						</form>
 					</div>
 				</div>
 			</div>
-			<div class="bottom-footer">
-				<div class="copy">
-					© 2022 BeatStarts
-				</div>
-				<div class="privacy">
-					<a href="#">Conditions</a>
-					<a href="#">Cookie</a>
-					<a href="#">Privacy</a>
-					<a href="#">Copyright</a>
-				</div>
 		</div>
-	</footer>
+	</div>
 </body>
 </html>

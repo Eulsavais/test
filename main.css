@@ -31,7 +31,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #6a8acfbd;
+	background-color: #6a8acfda;
 	z-index: 2;
 }
 /* #6C81AF */ 
@@ -560,3 +560,4 @@ h1 {
 		margin-bottom: 5px;
 	}
 }
+
